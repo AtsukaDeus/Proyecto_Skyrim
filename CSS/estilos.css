@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+  
+  }
+   
+  header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  h1 {
+      margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .search-form {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+  }
+  
+  .search-form input[type="text"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .search-form button[type="submit"] {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .search-form button[type="submit"]:hover {
+      background-color: #3e8e41;
+  }
+
+#imagenHeader{
+	width: 20%;
+    height: 20%;
+    padding-top: 0%;
+    margin-left: 0%;
+
+}
