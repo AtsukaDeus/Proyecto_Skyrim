@@ -15,7 +15,7 @@ body {
   }
   
   h1 {
-      margin: 0;
+    margin: 0;
     font-family: Viner Hand ITC;
   }
   
@@ -35,7 +35,7 @@ body {
   
   .search-form button[type="submit"] {
       padding: 10px;
-      background-color: #6d6b6b;
+      background-color: #212452;
       color: white;
       border: none;
       border-radius: 5px;
@@ -44,7 +44,7 @@ body {
   }
   
   .search-form button[type="submit"]:hover {
-      background-color: #444444;
+      background-color: #151734;
       
   }
 
@@ -71,70 +71,42 @@ body {
   } */
   
   a:visited {
-    color: rgb(20, 21, 21);
+    color: white;
   }
 
   a:hover {
     color: rgb(34, 111, 22);
   }
 
+.Parrafos{
+  padding-top: 50px;
+  font-family: bell mt;
+  font-style: italic;
+  color: white;
+  font-size: 20px;
+  
+}
 
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .container2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-logo img {
-    height: 50px;
-  }
-  
-  .footer-links ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .footer-links li {
-    margin-right: 20px;
-  }
-  
-  .footer-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-social ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .footer-social li {
-    margin-right: 10px;
-  }
-  
-  .footer-social a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .fa {
-    font-size: 20px;
-  }
-  
-  .fa:hover {
-    opacity: 0.8;
-  }
+.ImagenesPagsPociones{
+  padding-top: 30px;
+  padding-left: 50px;
+  float: right;
+  height: 400px;
+  width: 400px;
+}
+
+.contenedor2{
+  margin-right: 50px;
+  display: flex;
+}
+
+.ImagenesPagsIngredientes{
+  float: left;
+  height: 200px;
+  width: 200px;
+  padding-left: 50px;
+}
+
+.contenedor3{
+  display: flex;
+}

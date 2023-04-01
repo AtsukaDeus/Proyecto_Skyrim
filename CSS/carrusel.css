@@ -1,8 +1,14 @@
-.carrusel {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-}
+.carousel {
+    width: 800px; /* establece el ancho del carrusel */
+    margin: 0 auto; /* centra el carrusel horizontalmente */
+    padding-bottom: 40px;
+  }
+  
+  .carousel img {
+    max-width: 40%; /* establece el ancho máximo de la imagen al 100% del contenedor */
+    height: 30%; /* ajusta la altura de la imagen automáticamente */
+  }
+
 
 div.gallery {
     border: 1px solid #ccc;
@@ -13,8 +19,8 @@ div.gallery:hover {
 }
 
 div.gallery img {
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 40%;
 }
 
 div.desc {
@@ -32,18 +38,12 @@ div.desc {
     width: 24.99999%;
 }
 
-#apolo,
-#duque,
-#tom {
-    /* offset-x | offset-y | blur-radius | color */
-    text-shadow: 3px 2px 3px black;
-}
-
 .carousel-inner img {
     width: 50%;
     height: 40%;
     padding-top: 5%;
     margin-left: 25%;
+    object-fit: cover;
 }
 
 #Galeria {
@@ -59,3 +59,28 @@ div.desc {
 #id_oso {
     padding: 15px;
 }
+
+
+.d-block{
+    width: 50%;
+    height: 40%;   
+}
+
+.carousel-item img{
+    width: 50%;
+    height: 40%;
+    padding-top: 5%;
+    margin-left: 25%;
+
+}
+
+.carousel-item :active{
+    width: 50%;
+    height: 40%;
+    padding-top: 5%;
+    margin-left: 25%;
+}
+
+  
+  
+  

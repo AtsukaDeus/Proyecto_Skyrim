@@ -15,7 +15,15 @@ nav {
   }
   
   nav li {
+    font-family:  Viner Hand ITC;
     margin-left: 10px;
+    color: white;
+  }
+
+  nav li:hover{
+    background-color: #494848;
+    color: white;
+    border-radius: 10px;
   }
   
   nav a {
@@ -26,8 +34,24 @@ nav {
   }
   
   nav a:hover {
-    background-color: #494848;
     color: white;
-    border-radius: 10px;
   }
+
+    .redes{
+
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: outset;
+
+}
+
+.redes:hover{ /* hover son las propiedades que hay 
+  cuando paso el puntero sobre dicho objeto*/
+  
+background-color: rgb(62, 62, 62);
+border-radius: 10px;
+
+}
   
