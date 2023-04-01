@@ -4,9 +4,11 @@ body {
   }
    
   header {
-      background-color: #333;
+      background-image: url("../img/skyrimBetter.jpg");
+      background-size: cover;
+      height: 45vh;
       color: white;
-      padding: 20px;
+      margin: 0px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -14,7 +16,7 @@ body {
   
   h1 {
       margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Viner Hand ITC;
   }
   
   .search-form {
@@ -28,27 +30,111 @@ body {
       border: none;
       border-radius: 5px;
       margin-right: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Viner Hand ITC;
   }
   
   .search-form button[type="submit"] {
       padding: 10px;
-      background-color: #4CAF50;
+      background-color: #6d6b6b;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-    font-family: 'Times New Roman', Times, serif;
+      font-family: Viner Hand ITC;
   }
   
   .search-form button[type="submit"]:hover {
-      background-color: #3e8e41;
+      background-color: #444444;
+      
   }
 
-#imagenHeader{
-	width: 20%;
-    height: 20%;
-    padding-top: 0%;
-    margin-left: 0%;
+  .container {
+    border: 30px solid rgba(30, 29, 29, 0.755); /* Establece el borde del div con 2px de ancho, tipo sólido y color rojo */
+    border-bottom: 1px;
+    border-top: 1px;
+  }
 
-}
+
+  #arreglin {
+    padding-top: 150px;
+  }
+
+  .navegacion{
+    font-family: Viner Hand ITC;
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+
+  /* a:link {
+    color: ;
+  } */
+  
+  a:visited {
+    color: rgb(20, 21, 21);
+  }
+
+  a:hover {
+    color: rgb(34, 111, 22);
+  }
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    height: 50px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-links li {
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-social li {
+    margin-right: 10px;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .fa {
+    font-size: 20px;
+  }
+  
+  .fa:hover {
+    opacity: 0.8;
+  }
