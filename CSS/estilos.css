@@ -79,17 +79,19 @@ body {
   }
 
 .Parrafos{
+  margin-left: 40px;
   padding-top: 50px;
   font-family: bell mt;
   font-style: italic;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   
 }
 
 .ImagenesPagsPociones{
   padding-top: 30px;
-  padding-left: 50px;
+  margin-left: 150px;
+  margin-right: 100px;
   float: right;
   height: 400px;
   width: 400px;
@@ -102,9 +104,10 @@ body {
 
 .ImagenesPagsIngredientes{
   float: left;
-  height: 200px;
-  width: 200px;
-  padding-left: 50px;
+  height: 300px;
+  width: 300px;
+  margin-left: 50px;
+  margin-bottom: 100px;
 }
 
 .contenedor3{

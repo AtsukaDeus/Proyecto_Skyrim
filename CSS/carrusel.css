@@ -1,11 +1,12 @@
 .carousel {
     width: 800px; /* establece el ancho del carrusel */
     margin: 0 auto; /* centra el carrusel horizontalmente */
-    padding-bottom: 40px;
-  }
+    margin-bottom: 70px;
+    margin-top: 50px;
+}
   
   .carousel img {
-    max-width: 40%; /* establece el ancho máximo de la imagen al 100% del contenedor */
+    width: 60%; /* establece el ancho máximo de la imagen al 100% del contenedor */
     height: 30%; /* ajusta la altura de la imagen automáticamente */
   }
 
