@@ -36,9 +36,9 @@
         
         <div>
           <ul>
-            <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"><img class="redes" src="img/linkedin.png" width="40" height="40" align="right" /></a>
-            <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"><img class="redes" src="img/insta.png" width="40" height="40" align="right" /></a>
-            <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"><img class="redes" src="img/twitter.png" width="40" height="40" align="right" /></a>
+            <li><a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"><img class="redes" src="img/linkedin.png" width="40" height="40" alt="linkedin" /></a></li>
+            <li><a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"><img class="redes" src="img/insta.png" width="40" height="40" alt="instagram" /></a></li>
+            <li><a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"><img class="redes" src="img/twitter.png" width="40" height="40"  alt="twitter" /></a></li>
           </ul>
         </div>
 
@@ -49,8 +49,8 @@
         
       <div id="arreglin">
         <h1>Guía de alquimia Skyrim</h1>
-        <form class="search-form" action="#" method="get">
-          <input type="text" name="search" placeholder="pocion de curacion..." />
+        <form id="principalForm" class="search-form" >
+          <input type="text"  id="search" onchange="openPage()" placeholder="pocion de curacion..." />
           <button type="submit">Buscar</button>
         </form>
       </div>
@@ -66,22 +66,22 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="./Paginas/RespiracionAcuatica.html">
-                        <img class="d-block" src="img/Skyrim img/RespiracionAcuatica.jpg" alt="respiracionAcuatica"> 
+                    <a  href="Paginas/RespiracionAcuatica.html">
+                        <img class="d-block" src="./img/SkyrimImg/RespiracionAcuatica.jpg" alt="respiracionAcuatica"> 
                     </a>
 
                 </div>
 
                 <div class="carousel-item">
-                    <a href="Paginas/RestaurarSalud.html">
-                        <img class="d-block" src="img/Skyrim img/RestaurarSalud.jpg" alt="restaurarSalud">
+                    <a  href="Paginas/RestaurarSalud.html">
+                        <img class="d-block" src="./img/SkyrimImg/RestaurarSalud.jpg" alt="restaurarSalud">
                     </a>
     
                 </div>
 
                 <div class="carousel-item">
-                    <a href="./Paginas/ResistenciaEscarcha.html">
-                        <img class="d-block" src="img/Skyrim img/ResistenciaEscarcha.jpg" alt="resistenciaEscarcha">
+                    <a href="Paginas/ResistenciaEscarcha.html">
+                        <img class="d-block" src="./img/SkyrimImg/ResistenciaEscarcha.jpg" alt="resistenciaEscarcha">
                     </a>
 
                 </div>
@@ -106,6 +106,7 @@
 </div>
 
     <script src="JS/arreglinCarrusel.js"></script>
+    <script src="JS/diccionarioValidacion.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

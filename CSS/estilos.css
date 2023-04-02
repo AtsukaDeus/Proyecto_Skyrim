@@ -88,14 +88,14 @@ body {
   
 }
 
-.ImagenesPagsPociones{
+/* .ImagenesPagsPociones{
   padding-top: 30px;
   margin-left: 150px;
   margin-right: 100px;
-  float: right;
+  float: right; 
   height: 400px;
   width: 400px;
-}
+} */
 
 .contenedor2{
   margin-right: 50px;
@@ -112,4 +112,66 @@ body {
 
 .contenedor3{
   display: flex;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .contenedor2 {
+    flex-direction: column;
+  }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+  .contenedor2 {
+    flex-direction: row;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .contenedor3 {
+    flex-direction: column; 
+  }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+  .contenedor3 {
+    flex-direction: row;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .ImagenesPagsPociones {
+    padding-left: 15%;
+    padding-top: 30px;
+    float: center; 
+    height: 300px;
+    width: 300px;
+  }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+  .ImagenesPagsPociones {
+  padding-top: 5%;
+  float: left;
+  height: 500px;
+  width: 500px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .ImagenesPagsIngredientes {
+    padding-right: 15%;
+    padding-top: 30px;
+    float: center; 
+    height: 300px;
+    width: 300px;
+  }
 }

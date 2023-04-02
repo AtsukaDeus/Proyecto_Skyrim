@@ -10,6 +10,12 @@
     height: 30%; /* ajusta la altura de la imagen automáticamente */
   }
 
+  @media screen and (max-width: 768px) {
+    .carousel {
+      max-width: 80%;
+    }
+  }
+
 
 div.gallery {
     border: 1px solid #ccc;
@@ -82,6 +88,6 @@ div.desc {
     margin-left: 25%;
 }
 
-  
+
   
   
