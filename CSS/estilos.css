@@ -2,7 +2,7 @@ body {
     background-color: black;
   
   }
-   
+  
   header {
       background-image: url("../img/skyrimBetter.jpg");
       background-size: cover;
@@ -49,7 +49,7 @@ body {
   }
 
   .container {
-    border: 30px solid rgba(30, 29, 29, 0.755); /* Establece el borde del div con 2px de ancho, tipo sólido y color rojo */
+    border: 30px solid rgba(30, 29, 29, 0.755); /* Establece el borde del div con 2px de ancho, tipo sólido y color negro */
     border-bottom: 1px;
     border-top: 1px;
   }
@@ -174,4 +174,10 @@ body {
     height: 300px;
     width: 300px;
   }
+}
+
+#pacman{
+  height: 40px;
+  width: 60px;
+  border-radius: 15px;
 }

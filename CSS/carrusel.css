@@ -1,5 +1,5 @@
 .carousel {
-    width: 800px; /* establece el ancho del carrusel */
+    width: auto; /* establece el ancho del carrusel */
     margin: 0 auto; /* centra el carrusel horizontalmente */
     margin-bottom: 70px;
     margin-top: 50px;
@@ -67,7 +67,7 @@ div.desc {
     padding: 15px;
 }
 
-
+/* al clickear la imgen del carrusel esta parte configura el que no se desplace */
 .d-block{
     width: 50%;
     height: 40%;   
@@ -88,6 +88,3 @@ div.desc {
     margin-left: 25%;
 }
 
-
-  
-  
