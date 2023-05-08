@@ -38,6 +38,36 @@
 
       });
 
+      $.get('../pocionesResistenciaFuego.txt', function(contenido) {
+        coincidencia = contenido.match(new RegExp(valor));
+
+        if (coincidencia !== null){
+          window.location.href = "../Paginas/ResistenciaFuego.html";
+          return;
+        }
+
+      })
+
+      $.get('../pocionesResistenciaMagia.txt', function(contenido) {
+        coincidencia = contenido.match(new RegExp(valor));
+
+        if (coincidencia !== null){
+          window.location.href = "../Paginas/ResistenciaMagia.html";
+          return
+        }
+        
+      })
+
+      $.get('../pocionesResistenciaVeneno.txt', function(contenido){
+        coincidencia = contenido.match(new RegExp(valor));
+        
+        if (coincidencia !== null){
+          window.location.href = "../Paginas/ResistenciaVeneno.html";
+          return
+        }
+        
+      })
+
       if(coincidencia === null){
         alert("No se han encontrado coincidencias, intente con otras palabras.");
       }

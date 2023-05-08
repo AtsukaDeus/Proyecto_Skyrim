@@ -1,4 +1,5 @@
 escarcha
+pocion escarcha
 resistencia al frio
 resistencia frio
 frio
