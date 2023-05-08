@@ -11,3 +11,4 @@ pocion contra la escarcha
 pocion de resistencia al frio
 pocion resistencia frio
 pocion de resistencia al frio
+pocion escarcha
