@@ -42,7 +42,7 @@
                     <style> #contacto{margin-right: 100px; margin-bottom: 300px;} </style>
                     <h2>Contáctanos</h2>
                     <p>¡Estamos aquí para ayudarte! Envíanos un mensaje y te responderemos lo antes posible.</p>
-                <form action="https://formsubmit.co/b9f61f74e546f3f98aab46de55e22e0a" method="POST">
+                <form action="https://formsubmit.co/b9f61f74e546f3f98aab46de55e22e0a" method="POST" id="formContacto">
                     <style> .form-control{margin-bottom: 20px;} </style>
                     <div class="form-group">
                         <label for="nombre">Nombre completo</label>
@@ -63,7 +63,7 @@
                     <style> #btnContacto{background-color: rgb(43, 43, 43); border: white;} #btnContacto:hover{background-color: rgb(66, 65, 65);} </style>
                     <button type="submit" class="btn btn-primary" id="btnContacto">Enviar mensaje</button>
 
-                    <input type="hidden"  name="_next" value="http://127.0.0.1:5501/Paginas/ContactoEnviado.html">
+                    <input type="hidden"  name="_next" value="http://127.0.0.1:5501/Paginas/Contacto.html">
                     <input type="hidden"  name="_captcha" value="false">
                     
 
@@ -73,7 +73,8 @@
         </div>
     </div>
 </div>
-    
+    <!-- jquery validate, el cual valida si es que los campos del formulario no están vacíos     -->
+    <script src="../JS/validarContacto.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

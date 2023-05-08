@@ -8,7 +8,7 @@
       }
       var coincidencia;
 
-      $.get('../pocionesCuracion.txt', function(contenido) { // Lee el contenido del archivo de texto plano
+      $.get('../text/pocionesCuracion.txt', function(contenido) { // Lee el contenido del archivo de texto plano
           coincidencia = contenido.match(new RegExp(valor)); // Busca las coincidencias
           
           if (coincidencia !== null) {
@@ -18,7 +18,7 @@
 
       });
 
-      $.get('../pocionesRespiracionAcuatica.txt', function(contenido) { 
+      $.get('../text/pocionesRespiracionAcuatica.txt', function(contenido) { 
         coincidencia = contenido.match(new RegExp(valor)); 
         
         if (coincidencia !== null) {
@@ -28,7 +28,7 @@
 
       });
 
-      $.get('../pocionesResistenciaEscarcha.txt', function(contenido) { 
+      $.get('../text/pocionesResistenciaEscarcha.txt', function(contenido) { 
         coincidencia = contenido.match(new RegExp(valor)); 
         
         if (coincidencia !== null) {
@@ -38,7 +38,7 @@
 
       });
 
-      $.get('../pocionesResistenciaFuego.txt', function(contenido) {
+      $.get('../text/pocionesResistenciaFuego.txt', function(contenido) {
         coincidencia = contenido.match(new RegExp(valor));
 
         if (coincidencia !== null){
@@ -48,7 +48,7 @@
 
       })
 
-      $.get('../pocionesResistenciaMagia.txt', function(contenido) {
+      $.get('../text/pocionesResistenciaMagia.txt', function(contenido) {
         coincidencia = contenido.match(new RegExp(valor));
 
         if (coincidencia !== null){
@@ -58,7 +58,7 @@
         
       })
 
-      $.get('../pocionesResistenciaVeneno.txt', function(contenido){
+      $.get('../text/pocionesResistenciaVeneno.txt', function(contenido){
         coincidencia = contenido.match(new RegExp(valor));
         
         if (coincidencia !== null){
@@ -68,8 +68,9 @@
         
       })
 
-      if(coincidencia === null){
+      if(coincidencia === undefined){
         alert("No se han encontrado coincidencias, intente con otras palabras.");
+        return;
       }
 
 
