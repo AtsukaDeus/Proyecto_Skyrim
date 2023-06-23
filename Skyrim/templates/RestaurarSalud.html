@@ -1,0 +1,21 @@
+{% extends 'basePociones.html' %}
+{% load static %}
+
+{% block title %}Pocion de RestaurarSalud{% endblock %}
+
+{% block contexto_imgPoc %}
+<p class="Parrafos"> 
+  “Teníamos que recuperar Markarth de esos malditos renegados, no tendría piedad. Prepare mi hacha, mi escudo 
+  y mis hombres para partir, pero antes unos alquimistas me prepararon un poción con un poco de trigo y ranúnculo encorvado, 
+  prometiéndome una vitalidad inquebrantable en el campo de batalla… No confío mucho en esos herboristas, pero uno nunca sabe.”
+  <br>
+  <br>
+  - Ulfric Capa de la Tormenta
+</p>
+<img src="{% static 'img/SkyrimImg/RestaurarSalud.jpg' %}" alt="restaurarSalud" class="ImagenesPagsPociones">
+{% endblock %}
+
+{% block imgIngredientes %}
+  <img src="{% static 'img/SkyrimImg/RanunculoEncorbado.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+  <img src="{% static 'img/SkyrimImg/Trigo.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+{% endblock %}

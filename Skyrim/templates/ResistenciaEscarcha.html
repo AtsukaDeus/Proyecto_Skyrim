@@ -1,0 +1,20 @@
+{% extends 'basePociones.html' %}
+{% load static %}
+
+{% block title %}Pocion de Resistencia a la Escarcha{% endblock %}
+
+{% block contexto_imgPoc %}
+    <p class="Parrafos"> 
+      “Nunca es buena idea viajar sin precauciones por los alrededores de Hibernalia, los pies se te congelan, 
+      las sendas están repletas de nieve y por sobre todo, esos malditos espectros de hielo deambulan a sus anchas… 
+      Siempre llevo conmigo un poco de Mirria de escarcha y Flor púrpura para soportar sus penetrantes brisas.” <br>
+      <br>
+      - Thoring de Lucero del Alba 
+    </p>
+    <img src="{% static 'img/SkyrimImg/ResistenciaEscarcha.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsPociones">
+{% endblock %}
+
+{% block imgIngredientes %}
+  <img src="{% static 'img/SkyrimImg/MirriamDeEscarcha.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+  <img src="{% static 'img/SkyrimImg/Cardo.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+{% endblock %}

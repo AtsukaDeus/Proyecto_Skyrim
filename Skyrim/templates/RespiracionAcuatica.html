@@ -1,0 +1,23 @@
+{% extends 'basePociones.html' %}
+{% load static %}
+
+{% block title %}Pocion de Respiracion Acuatica{% endblock %}
+
+{% block contexto_imgPoc %}
+<p class="Parrafos"> 
+  “Hubo un contrato que salió mal y tuvimos que salir corriendo de Ventalia. Vex tuvo la fortuna de agarrar uno
+  de los caballos a las afuera de la cuidad. Sin embargo, para mi desgracia yo tuve que escapar corriendo. Pese 
+  a mi resistencia, de tanto correr mis piernas ya no daban más y me lancé al humedal más cercano. Aguanté bajo 
+  el agua el tiempo necesario para que dieran por desaparecido. Un huevo de gallina, un huevo de salmón y como 
+  todo buen ladrón, una dosis de suerte, fueron suficiente para tener un pie fuera de esas mugrientas celdas”
+  <br>
+  <br>
+  - Vipir El Raudo 
+</p>
+<img src="{% static 'img/SkyrimImg/RespiracionAcuatica.jpg' %}" alt="respiracionAcuatica" class="ImagenesPagsPociones">
+{% endblock %}
+
+{% block imgIngredientes %}
+  <img src="{% static 'img/SkyrimImg/HuevasDeSalmon.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+  <img src="{% static 'img/SkyrimImg/HuevoDeHallina.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+{% endblock %}

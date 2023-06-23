@@ -1,0 +1,19 @@
+{% extends 'basePociones.html' %}
+{% load static %}
+
+{% block title %}Pocion de Resistencia al Fuego{% endblock %}
+
+{% block contexto_imgPoc %}
+    <p class="Parrafos"> 
+      “En la constante busqueda de dominar las conjuraciones, siempren pueden haber tropiezos. Los atronach de las llamas son Daedras particuales, ya que al perecer en el campo de batalla, estallan en una lluvia de fuego, quemando lo que haya cerca... Como mago, siempre debes anticiparte a los problemas. Unas lenguas de Dragon y sinforicarpos nunca vienen mal.”
+      <br>
+      <br>
+      - Phinis Gestor
+    </p>
+    <img src="{% static 'img/SkyrimImg/ResistenciaFuego.jpg' %}" alt="resistenciaFuego" class="ImagenesPagsPociones">
+{% endblock %}
+
+{% block imgIngredientes %}
+  <img src="{% static 'img/SkyrimImg/LenguaDragon.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+  <img src="{% static 'img/SkyrimImg/Sinforicarpos.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+{% endblock %}

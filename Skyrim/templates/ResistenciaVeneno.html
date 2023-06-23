@@ -1,0 +1,20 @@
+{% extends 'basePociones.html' %}
+{% load static %}
+
+{% block title %}Pocion de Resistencia al Veneno{% endblock %}
+
+{% block contexto_imgPoc %}
+<p class="Parrafos"> 
+  “Las antiguas ruinas Dwemer se encuentran las profundidades de todo Skyrim y por consecuente, hay un gran cantidad de adversidades. En mis aventuras en busca del libro Oghma Infinium, me he encontrado muchas arañas y te digo, lleva siempre piel de skeever y Quintinas de cangrejo.”
+  <br>
+  <br>
+  - Septimus Signus
+</p>
+<img src="{% static 'img/SkyrimImg/ResistenciaVeneno.jpg' %}" alt="resistenciaVeneno" class="ImagenesPagsPociones">
+{% endblock %}
+
+{% block imgIngredientes %}
+  <img src="{% static 'img/SkyrimImg/PielSkeeverChamuscado.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+  <img src="{% static 'img/SkyrimImg/QuintinaCangrejoBarro.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+{% endblock %}
+

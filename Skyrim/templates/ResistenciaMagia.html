@@ -1,0 +1,19 @@
+{% extends 'basePociones.html' %}
+{% load static %}
+
+{% block title %}Pocion de Resisencia Magica{% endblock %}
+
+{% block contexto_imgPoc %}
+    <p class="Parrafos"> 
+      “Los cuchillas están capacidos para luchar con el Sangre de Dragon contra abominaciones sobrenaturales. Habían un sin fin de batallas y los siempre debo llevar todo tipo de pociones que me cubran las espaldas y la más útil es la de resistencia a la magia la cual se hace con lavanda y cardo lanudo”
+      <br>
+      <br>
+      - Delphine
+    </p>
+    <img src="{% static 'img/SkyrimImg/ResistenciaMagia.jpg' %}" alt="resistenciaMagia" class="ImagenesPagsPociones">
+{% endblock %}
+
+{% block imgIngredientes %}
+  <img src="{% static 'img/SkyrimImg/CardoLanudo.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+  <img src="{% static 'img/SkyrimImg/Lavanda.jpg' %}" alt="resistenciaEscarcha" class="ImagenesPagsIngredientes">
+{% endblock %}

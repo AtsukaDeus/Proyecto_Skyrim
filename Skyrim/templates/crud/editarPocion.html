@@ -1,0 +1,22 @@
+{% extends "crud/baseCrud.html" %}
+{% load crispy_forms_tags %}
+
+{% block contenido %} 
+<div class="Parrafos">
+    <h2>Editar Poción</h2>
+    <form method="post">
+        {% csrf_token %}
+    <style>.contenedorForm textarea, input{max-width: 400px;} </style>
+    <div class=contenedorForm>
+        <div class="form-group">
+            <label for="{{ formPocionWiki.nombre.id_for_label }}">Nombre: </label> {{ formPocionWiki.nombre }}
+        </div><br>
+        <div class="form-group">
+            <label for="{{ formPocionWiki.ingredientes.id_for_label }}">Ingredientes:</label>
+            {{ formPocionWiki.ingredientes }}
+        </div><br>
+        <button class="btn btn-primary" type="submit">Guardar cambios</button>
+    </div>    
+    </form>
+</div>
+{% endblock %}
