@@ -1,19 +1,36 @@
 {% extends 'login/baseLog.html' %}
 
 {% block title %}Log In{% endblock %}
+{% block volver %}<a href="{% url 'index' %}">Volver</a>{% endblock volver %}
 
 {% block contenido %}
-<style>#contedorLogIn{align-items: center; justify-content: center; display: 
-    flex; background-color: rgb(62, 62, 62); margin-left: 30%; margin-right: 25%; 
-    margin-top: 5%; padding-bottom: 40px; padding-right: 20x; border-radius: 5%; border-style: outset;}</style>
-<div id="contedorLogIn">
+<style>
+    .form-control{
+        width: 30%;
+    }
+</style>
+
+{% if messages %}
+{% for message in messages %}
+    <div class="alert alert-success" role="alert">
+    <strong>¡Bien hecho!</strong> {{ message }}
+    </div>
+{% endfor %}
+{% endif %}
+
 <div class="Parrafos">
-    <h2>Iniciar sesión</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button class="btn btn-success" type="submit">Iniciar sesión</button>
-    </form>
+    <p>Ingrese su usuario para utilizar las herramientas de crear pocion, ver, editar y eliminarlas
+        de ser necesario
+    </p>
 </div>
-</div>
+
+    <div class="Parrafos">
+        <h2>Iniciar sesión</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success" type="submit">Iniciar sesión</button>
+        </form>
+    </div>
+
 {% endblock %}

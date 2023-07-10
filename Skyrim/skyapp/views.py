@@ -5,48 +5,50 @@ from .forms import PocionWikiForm, LoginForm
 from .models import PocionWiki
 
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
-from .forms import LoginForm
+from django.contrib.auth import authenticate, login, logout # utilizando los métodos de autenticación de django
+from .forms import LoginForm, SignupForm
+from django.contrib import messages
 
 # Create your views here.
-@login_required
+
 def index(request):
     return render(request, 'index.html')
 
-@login_required
+
 def servicios(request):
     return render(request, 'Servicios.html')
 
-@login_required
+
 def contacto(request):
     return render(request, 'Contacto.html')
     
 # views pociones
 
-@login_required
+
 def respiracionAcuatica(request):
     return render(request, 'RespiracionAcuatica.html')
 
-@login_required
+
 def restaurarSalud(request):
-    return render(request, 'RestaurarSalud.html')    
+    return render(request, 'RestaurarSalud.html')   
+
 def resistenciaEscarcha(request):
     return render(request, 'ResistenciaEscarcha.html')
 
-@login_required
+
 def resistenciaFuego(request):
     return render(request, 'ResistenciaFuego.html')
 
-@login_required
+
 def resistenciaMagia(request):
     return render(request, 'ResistenciaMagia.html')
 
-@login_required
+
 def resistenciaVeneno(request):
     return render(request, 'ResistenciaVeneno.html')
 
 
-# Views de crud
+# ------------------------ Views de crud ----------------------------------
 @login_required
 def verPociones(request):
     pociones = PocionWiki.objects.order_by('id')
@@ -87,8 +89,11 @@ def eliminarPociones(request, id):
     
     return redirect('ver_pociones')
 
+#---------------------------------------------------------------------------------
+
+
 # View del Log In
-def loginView(request):
+def logIn(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -97,11 +102,32 @@ def loginView(request):
             user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('index')  # Redirige a la página de inicio después del inicio de sesión
+                return redirect('index')  
             else:
                 form.add_error(None, 'Credenciales inválidas')
     else:
         form = LoginForm()
     
     return render(request, 'login/login.html', {'form': form})
+
+# view del Log Out
+def logOut(request):
+    logout(request)
+    return redirect('index')
+
+
+# view del Sign Up
+def signUp(request):
+    if request.method == 'POST':
+        form = SignupForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, '¡Usuario registrado exitosamente! Por favor, inicia sesión.')
+            return redirect('login')  
+    else:
+        form = SignupForm()
+    
+    return render(request, 'login/signup.html', {'form': form})
+
+
 

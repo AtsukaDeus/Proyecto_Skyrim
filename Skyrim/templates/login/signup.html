@@ -1,0 +1,21 @@
+{% extends 'login/baseLog.html' %}
+{% block title %}Sign Up{% endblock %}
+{% block volver %}<a href="{% url 'login' %}">Volver</a>{% endblock volver %}
+
+{% block contenido %}
+
+<style>
+    .form-control{
+        width: 30%;
+    }
+</style>
+
+<div class="Parrafos">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Crear cuenta</button>
+    </form>
+</div>
+
+{% endblock contenido %}

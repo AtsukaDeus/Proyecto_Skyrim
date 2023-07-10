@@ -3,11 +3,11 @@ from django.urls import path
 from skyapp.views import index, servicios, contacto
 from skyapp.views import respiracionAcuatica, restaurarSalud, resistenciaEscarcha, resistenciaFuego, resistenciaMagia, resistenciaVeneno
 from skyapp.views import verPociones, crearPociones, editarPociones, eliminarPociones
-from skyapp.views import loginView
+from skyapp.views import logIn, logOut, signUp
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index', index, name='index'),
+    path('', index, name='index'),
     path('servicios', servicios, name='servicios'),
     path('contacto', contacto, name='contacto'),
     
@@ -26,7 +26,12 @@ urlpatterns = [
     path('eliminar_pocion/<int:id>', eliminarPociones, name='eliminar_pocion'),
     
     # log in
-    path('', loginView, name='login'),
+    path('login', logIn, name='login'),
     
+    # log out
+    path('logout/', logOut, name='logout'),
+    
+    # sign up
+    path('signup', signUp, name='signup'),
     
 ]

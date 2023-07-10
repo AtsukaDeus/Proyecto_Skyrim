@@ -47,11 +47,9 @@ nav {
 
 }
 
-.redes:hover{ /* hover son las propiedades que hay 
-  cuando paso el puntero sobre dicho objeto*/
-  
+.redes:hover{ 
 background-color: rgb(62, 62, 62);
 border-radius: 10px;
 
 }
-  
+

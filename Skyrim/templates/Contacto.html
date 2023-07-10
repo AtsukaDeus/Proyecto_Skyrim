@@ -35,6 +35,9 @@
                         <li><a href="https://www.linkedin.com/in/fcomaths/"><img class="redes" src="{% static 'img/linkedin.png' %}" width="40" height="40" alt="linkedin" /></a></li>
                         <li><a href="https://www.instagram.com/guia_skyrim/" target="_blank"><img class="redes" src="{% static 'img/insta.png' %}" width="40" height="40" alt="linkedin" /></a></li>
                         <li><a href="https://twitter.com/Guia_Skyrim_23" target="_blank"><img class="redes" src="{% static 'img/twitter.png' %}" width="40" height="40" alt="linkedin" /></a></li>
+                        {% if user.is_authenticated %}
+                        <li><a style="margin-right: 10px;" id="btnLogOut" class="btn btn-danger" type="button" href="{% url 'logout' %}">Cerrar sesión</a></li>
+                        {% endif %}
                     </ul>
                 </div>
 
