@@ -67,17 +67,7 @@ body {
 
   }
 
-  /* a:link {
-    color: ;
-  } */
   
-  a:visited {
-    color: white;
-  }
-
-  a:hover {
-    color: rgb(34, 111, 22);
-  }
 
 .Parrafos{
   margin-left: 40px;
@@ -87,6 +77,10 @@ body {
   color: white;
   font-size: 22px;
   
+}
+
+.Parrafos li{
+  list-style: none !important;
 }
 
 /* .ImagenesPagsPociones{
@@ -177,5 +171,16 @@ body {
   }
 }
 
+#pociones-container  a{
+      margin-right: 15px;
+}
+
+.ingredientes-item{
+  font-family: 'Courier New';
+  font-size: 17px;
+}
 
 
+.li-item-pociones{
+  margin-bottom: 6%;
+}

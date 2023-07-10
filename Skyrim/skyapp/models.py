@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser
+from rest_framework import serializers
 
 # Create your models here.
 class PocionWiki(models.Model):
@@ -8,3 +8,4 @@ class PocionWiki(models.Model):
     def __str__(self) -> str:
         return f'Pocion: {self.nombre} {self.ingredientes}'
     
+

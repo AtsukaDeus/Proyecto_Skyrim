@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'skyapp',
     'crispy_forms',
     'gestion_usuario',
+    'rest_framework',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

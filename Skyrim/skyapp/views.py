@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 
+from django.utils.decorators import method_decorator
+
 from .forms import PocionWikiForm, LoginForm
 from .models import PocionWiki
 
@@ -8,6 +10,10 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout # utilizando los métodos de autenticación de django
 from .forms import LoginForm, SignupForm
 from django.contrib import messages
+
+# Importaciones para la API
+from rest_framework import generics
+from .serializers import PocionWikiSerializer
 
 # Create your views here.
 
@@ -51,8 +57,7 @@ def resistenciaVeneno(request):
 # ------------------------ Views de crud ----------------------------------
 @login_required
 def verPociones(request):
-    pociones = PocionWiki.objects.order_by('id')
-    return render(request, 'crud/verPociones.html', {'pociones': pociones})
+    return render(request, 'crud/verPociones.html')
 
 
 @login_required
@@ -130,4 +135,9 @@ def signUp(request):
     return render(request, 'login/signup.html', {'form': form})
 
 
+# ---------------  class view API --------------------
+@method_decorator(login_required, name='dispatch')
+class PocionWikiList(generics.ListCreateAPIView):
+    queryset = PocionWiki.objects.all()
+    serializer_class = PocionWikiSerializer
 

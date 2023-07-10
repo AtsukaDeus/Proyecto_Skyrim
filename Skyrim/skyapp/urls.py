@@ -2,6 +2,7 @@ from django.urls import path
 from skyapp.views import index, servicios, contacto
 from skyapp.views import respiracionAcuatica, restaurarSalud, resistenciaEscarcha, resistenciaFuego, resistenciaMagia, resistenciaVeneno
 from skyapp.views import verPociones, crearPociones, editarPociones, eliminarPociones
+from skyapp.views import PocionWikiList
 
 urlpatterns = [
     path('', index, name='index'),
@@ -21,4 +22,7 @@ urlpatterns = [
     path('crear_pocion', crearPociones, name='crear_pocion'),
     path('editar_pocion/<int:id>', editarPociones, name='editar_pocion'),
     path('eliminar_pocion/<int:id>', eliminarPociones, name='eliminar_pocion'),
+    
+    # path API
+    path('lista_pociones', PocionWikiList.as_view(), name='lista_pociones'),
 ]

@@ -1,21 +1,15 @@
 {% extends "crud/baseCrud.html" %}
 {% load static %}
-
+{% block block-volver %}<a href="{% url 'index' %}">Volver</a>{% endblock block-volver %}
 
 {% block contenido %} 
+
+
 <div class="Parrafos">
-    <h2>Pociones WIKI</h2>
-    <ul>
-        {% for pocion in pociones %}
-            <li>{{ pocion.nombre }}</li>
-            <style> .Ingredientes{ font-family: 'Courier New'; padding-right: 200px; font-size: 20px;} </style>
-            <p class="Ingredientes">{{ pocion.ingredientes}}</p>
-            <style>.updel{color: rgb(0, 102, 255); padding-right: 10px; text-decoration: none;} .updel:visited {color: rgb(0, 102, 255);} .updel:hover{color: gray} </style>
-            <a class="updel" href="editar_pocion/{{pocion.id}}">Editar</a>
-            <a class="updel" href="eliminar_pocion/{{pocion.id}}">Eliminar</a><br><br>
-        {% empty %}
-            <li>No hay pociones en la wiki</li>
-        {% endfor %}
-    </ul>
+    <div id="pociones-container">
+        <ul id="pociones-list">
+
+        </ul>
+    </div>
 </div>
 {% endblock %}
