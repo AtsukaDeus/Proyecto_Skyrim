@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'skyapp',
     'crispy_forms',
+    'gestion_usuario',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
