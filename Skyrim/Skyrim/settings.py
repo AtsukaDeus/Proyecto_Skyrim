@@ -31,7 +31,13 @@ INSTALLED_APPS = [
     'crispy_forms',
     'gestion_usuario',
     'rest_framework',
+    'django_extensions',
 ]
+
+GRAPH_MODELS = {
+    'all_applications': True,
+    'group_models': True,
+}
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
